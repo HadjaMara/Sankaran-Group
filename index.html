@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sankaran Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+    }
+    header {
+      padding: 20px 40px;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      margin: 0;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 40px;
+      background-color: #f3f3f3;
+    }
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 18px;
+    }
+    .projects {
+      padding: 60px 40px;
+      background-color: #fff;
+      text-align: center;
+    }
+    .projects h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+    .project {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 6px;
+      background: #fafafa;
+    }
+    .project img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    .project-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .coming-soon {
+      font-size: 14px;
+      color: #888;
+    }
+    footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sankaran Group</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Our Buildings</a>
+    <a href="#">SM Sankaran</a>
+    <a href="#">Apartments</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Building Guinea’s Future</h2>
+  <p>Sankaran Group is shaping the skyline of Conakry through innovative construction and luxury real estate. Discover our current and upcoming developments.</p>
+</section>
+
+<section class="projects">
+  <h2>Our Buildings</h2>
+  <div class="project-grid">
+    <div class="project">
+      <img src="sankaran-plaza-logo.png" alt="Sankaran Plaza Logo">
+      <div class="project-title">Sankaran Plaza</div>
+    </div>
+    <div class="project">
+      <img src="sankaran-platinum-logo.png" alt="Sankaran Platinum Logo">
+      <div class="project-title">Sankaran Platinum</div>
+    </div>
+    <div class="project">
+      <img src="sankaran-platinum-plus-logo.png" alt="Sankaran Platinum Plus Logo">
+      <div class="project-title">Sankaran Platinum Plus</div>
+      <div class="coming-soon">Coming Soon</div>
+    </div>
+    <div class="project">
+      <img src="sankaran-tower-logo.png" alt="Sankaran Tower Logo">
+      <div class="project-title">Sankaran Tower</div>
+      <div class="coming-soon">Coming Soon</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Sankaran Group. All rights reserved.
+</footer>
+
+</body>
+</html>
