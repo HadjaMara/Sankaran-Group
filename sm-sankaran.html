@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SM Sankaran</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
-  <style>
-    body { margin: 0; font-family: 'Lato', sans-serif; background: #fff; color: #222; }
-    header { background: #f9f9f9; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
-    header h1 { font-family: 'Playfair Display', serif; font-size: 28px; margin: 0; }
-    nav a { margin-left: 20px; text-decoration: none; color: #222; font-weight: bold; }
-    .hero { padding: 40px 20px; text-align: center; }
-    .hero img { max-width: 300px; height: auto; margin-bottom: 20px; }
-    .hero h2 { font-family: 'Playfair Display', serif; font-size: 28px; }
-    .hero p { max-width: 700px; margin: 20px auto; font-size: 18px; }
-    .section { padding: 40px 20px; text-align: center; }
-    .section h3 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 20px; }
-    .section ul { list-style: none; padding: 0; font-size: 16px; }
-    .section ul li { margin-bottom: 10px; }
-    form { max-width: 600px; margin: 0 auto; text-align: left; }
-    label { display: block; margin: 15px 0 5px; font-weight: bold; }
-    input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: 'Lato', sans-serif; }
-    button { margin-top: 20px; background: #bfa268; color: white; padding: 12px 24px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
-    footer { background: #f1f1f1; text-align: center; padding: 20px; font-size: 14px; margin-top: 40px; }
-  </style>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>SM Sankaran - Construction Company</title>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+ <style>
+   body { margin: 0; font-family: 'Lato', sans-serif; background-color: #ffffff; color: #222; }
+   header { padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; background-color: #f9f9f9; }
+   header h1 { font-family: 'Playfair Display', serif; font-size: 28px; color: #333; }
+   .hero { position: relative; text-align: center; }
+   .hero img { width: 100%; height: auto; }
+   .section { padding: 60px 40px; text-align: center; }
+   .section h2 { font-family: 'Playfair Display', serif; font-size: 32px; margin-bottom: 10px; }
+   .section p { max-width: 700px; margin: 0 auto 30px; font-size: 16px; line-height: 1.6; }
+   .gallery { display: grid; grid-template-columns: 1fr; gap: 40px; max-width: 900px; margin: 0 auto; }
+   .gallery img { width: 100%; border-radius: 6px; }
+   .caption { font-family: 'Playfair Display', serif; font-size: 18px; margin-top: 10px; }
+   .contact-form { max-width: 600px; margin: 0 auto; text-align: left; }
+   .contact-form label { display: block; margin: 15px 0 5px; font-weight: bold; }
+   .contact-form input, .contact-form textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: 'Lato', sans-serif; }
+   .contact-form button { margin-top: 20px; background-color: #bfa268; color: white; padding: 12px 24px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
+   footer { background-color: #f1f1f1; text-align: center; padding: 20px; font-size: 14px; margin-top: 40px; }
+ </style>
 </head>
 <body>
 
 <header>
-  <h1>SM Sankaran</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="#">Buildings</a>
-    <a href="#">Contact</a>
-  </nav>
+ <h1>SM Sankaran</h1>
+ <nav>
+   <a href="#">Home</a>
+   <a href="#">About</a>
+   <a href="#">Projects</a>
+   <a href="#">Contact</a>
+ </nav>
 </header>
 
 <section class="hero">
-  <img src="sm-sankaran-logo.jpg" alt="SM Sankaran Logo" />
-  <h2>Your Vision, Our Foundation</h2>
-  <p>SM Sankaran is the construction division of Sankaran Group, offering reliable, high-quality building and multi-service solutions across Conakry and beyond. From luxury residential towers and family homes to commercial developments, we build with precision and passion — including custom houses tailored to your needs.</p>
+ <!-- Include an image for the hero section -->
+ <img src="images/sm-sankaran-construction.jpg" alt="SM Sankaran Construction">
 </section>
 
 <section class="section">
-  <h3>Our Services</h3>
-  <ul>
-    <li>Real Estate Construction (Towers, Homes, Commercial Buildings)</li>
-    <li>Custom Home Building</li>
-    <li>Construction Management & Supervision</li>
-    <li>Maintenance & Multi-Service Projects</li>
-    <li>Interior and Exterior Renovations</li>
-  </ul>
+ <h2>We Build Your Dreams</h2>
+ <p>SM Sankaran is a leading construction company specializing in residential, commercial, and industrial projects. We are committed to delivering high-quality buildings that exceed expectations. Our experience and attention to detail make us a trusted partner in every phase of the construction process.</p>
 </section>
 
-<section class="section" id="contact">
-  <h3>Contact Us</h3>
-  <form>
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+<section class="gallery">
+ <img src="images/sm-sankaran-project1.jpg" alt="Residential Construction">
+ <div class="caption">Residential Project</div>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+ <img src="images/sm-sankaran-project2.jpg" alt="Commercial Building">
+ <div class="caption">Commercial Building</div>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+ <img src="images/sm-sankaran-project3.jpg" alt="Industrial Facility">
+ <div class="caption">Industrial Facility</div>
+</section>
 
-    <button type="submit">Send Message</button>
-  </form>
+<section class="contact-form" id="contact">
+ <h3>Contact Us</h3>
+ <form>
+   <label for="name">Name</label>
+   <input type="text" id="name" name="name" required />
+
+   <label for="email">Email</label>
+   <input type="email" id="email" name="email" required />
+
+   <label for="message">Message</label>
+   <textarea id="message" name="message" rows="5" required></textarea>
+
+   <button type="submit">Send Message</button>
+ </form>
 </section>
 
 <footer>
-  &copy; 2025 Sankaran Group. All rights reserved.
+ &copy; 2025 SM Sankaran Construction. All rights reserved.
 </footer>
 
 </body>
