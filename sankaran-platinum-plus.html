@@ -15,15 +15,30 @@
    color: #333;
  }
  header {
-   background-color: #222;
-   color: black;
-   padding: 20px 40px;
-   text-align: center;
- }
- header h1 {
-   font-family: 'Bodoni', serif;
-   font-size: 50px;
- }
+ background-color: #222;
+ color: white;
+ display: flex;               /* Enable Flexbox */
+ justify-content: space-between; /* Space out elements */
+ align-items: center;         /* Vertically center the items */
+ padding: 20px 40px;
+}
+
+header h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: 36px;
+ margin-right: 20px;           /* Space between company name and navigation */
+}
+
+nav {
+ display: flex;                /* Enable Flexbox for navigation items */
+}
+
+nav a {
+ color: white;
+ text-decoration: none;
+ margin-left: 20px;             /* Space between each building name */
+ font-size: 18px;
+}
 
  /* Hero Section */
  .hero {
