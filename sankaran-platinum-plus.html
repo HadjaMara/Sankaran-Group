@@ -1,129 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Sankaran Platinum Plus</title>
- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
- <style>
-   /* Your CSS styling for this specific page */
-   body {
-     font-family: 'Lato', sans-serif;
-     background-color: #f7f7f7;
-     color: #333;
-   }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sankaran Platinum Plus</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<style>
+ /* General Styles */
+ body {
+   font-family: 'Lato', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f7f7f7;
+   color: #333;
+ }
+ header {
+   background-color: #222;
+   color: white;
+   padding: 20px 40px;
+   text-align: center;
+ }
+ header h1 {
+   font-family: 'Bodoni', serif;
+   font-size: 36px;
+ }
 
-   header {
-     padding: 30px 60px;
-     background-color: #222;
-     color: white;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-   }
-  <section class="hero">
- <h2>Elevated Living, Coming Soon</h2>
- <p>Sankaran Platinum Plus is the next chapter in luxury residences by Sankaran Group. Designed to deliver even more space, elegance, and elevated amenities, this new development will soon rise in one of Conakry’s most desirable neighborhoods.</p>
-</section>
+ /* Hero Section */
+ .hero {
+   background-image: url(platinum-plus-logo.PNG'); /* Add your image here */
+   background-size: cover;
+   background-position: center;
+   color: white;
+   text-align: center;
+   padding: 100px 40px;
+ }
+ .hero h2 {
+   font-size: 48px;
+   margin-bottom: 20px;
+ }
+ .hero p {
+   font-size: 24px;
+   margin-bottom: 40px;
+ }
 
+ /* Description Section */
+ .description {
+   padding: 60px 40px;
+   background-color: white;
+   text-align: center;
+ }
+ .description h2 {
+   font-size: 36px;
+   margin-bottom: 20px;
+ }
+ .description p {
+   font-size: 18px;
+   line-height: 1.6;
+   max-width: 800px;
+   margin: 0 auto;
+ }
 
-   header h1 {
-     font-family: 'Papyrus', serif;
-     font-size: 40px;
-   }
+ /* Gallery Section */
+ .gallery {
+   display: flex;
+   justify-content: space-around;
+   margin: 40px 0;
+   text-align: center;
+ }
+ .gallery img {
+   max-width: 30%;
+   height: auto;
+   border-radius: 10px;
+ }
 
-   nav a {
-     color: white;
-     text-decoration: none;
-     margin: 0 15px;
-     font-size: 25px;
-   }
+ /* Call to Action Section */
+ .cta {
+   background-color: #bfa268;
+   padding: 40px;
+   text-align: center;
+   color: white;
+ }
+ .cta h3 {
+   font-size: 36px;
+   margin-bottom: 20px;
+ }
+ .cta a {
+   text-decoration: none;
+   background-color: #222;
+   color: white;
+   padding: 15px 30px;
+   border-radius: 5px;
+   font-size: 18px;
+ }
 
-   .project-details {
-     padding: 60px 40px;
-     text-align: center;
-   }
-
-   .project-details h2 {
-     font-size: 36px;
-     font-family: 'Papyrus', serif;
-   }
-
-   .project-details img {
-     max-width: 80%;
-     height: auto;
-     border-radius: 10px;
-     margin-bottom: 20px;
-   }
-
-   footer {
-     background-color: #222;
-     color: white;
-     padding: 20px 0;
-     text-align: center;
-   }
-
-   footer p {
-     font-size: 25px;
-   }
- </style>
+ /* Footer Section */
+ footer {
+   background-color: #222;
+   color: white;
+   padding: 20px;
+   text-align: center;
+ }
+ footer p {
+   font-size: 16px;
+ }
+</style>
 </head>
 <body>
 
 <header>
- <h1>Sankaran Group</h1>
- <nav>
-   <a href="index.html">Home</a>
-   <a href="sankaran-plaza.html">Sankaran Plaza</a>
-   <a href="sankaran-platinum.html">Sankaran Platinum</a>
-   <a href="sankaran-platinum-plus.html">Sankaran Platinum Plus</a>
-   <a href="sankaran-tower.html">Sankaran Tower</a>
-   <a href="sm-sankaran.html">SM Sankaran</a>
- </nav>
+<h1>Sankaran Group</h1>
 </header>
 
-<!-- Project Details Section for Sankaran Platinum Plus -->
-<section class="project-details">
- <h2>Sankaran Platinum Plus</h2>
+<!-- Hero Section -->
+<section class="hero">
+<h2>Sankaran Platinum Plus</h2>
+<p>Exclusive living with premium amenities</p>
+</section>
+
+<!-- Description Section -->
+<section class="description">
+<h2>Project Overview</h2>
+<p>Sankaran Platinum Plus offers luxurious apartments designed to cater to modern living needs. This development features a range of world-class amenities, including a pool, gym, café, and spacious living spaces. Located in the heart of Conakry, this property is perfect for those seeking luxury, comfort, and convenience.</p>
+</section>
+
+<!-- Gallery Section -->
 <section class="gallery">
- <div class="caption">Elegant Reception Area</div>
- <img src="Platinum-plus-lobby.JPG" alt="Reception">
- <div class="caption">Private Fitness Center</div>
- <img src="Platinum-plus-gym.JPG" alt="Gym">
- <div class="caption">Kids' Playroom</div>
-  <img src="Platinum-plus-playroom.JPG" alt="Kids Playroom">
- <div class="caption">Pool</div>
-  <img src="Platinum-plus-pool.JPG" alt="Pool">
- 
+<img src="platinum-plus-lobby.JPG" alt="Sankaran Platinum Plus Interior">
+<img src="platinum-plus-gym.jpg" alt="Sankaran Platinum Plus Amenities">
+ <img src="platinum-plus-playroom.jpg" alt="Sankaran Platinum Plus Amenities">
+<img src="platinum-plus-pool.jpg" alt="Sankaran Platinum Plus Exterior">
 </section>
 
-<section class="contact" id="contact">
- <h3>Contact Us</h3>
- <form>
-   <label for="name">Name</label>
-   <input type="text" id="name" name="name" required>
-
-   <label for="email">Email</label>
-   <input type="email" id="email" name="email" required>
-
-   <label for="message">Message</label>
-   <textarea id="message" name="message" rows="5" required></textarea>
-
-   <button type="submit">Send Message</button>
- </form>
+<!-- Call to Action Section -->
+<section class="cta">
+<h3>Ready to Experience Platinum Plus?</h3>
+<a href="contact.html">Contact Us for More Information</a>
 </section>
 
 <footer>
- &copy; 2025 Sankaran Group. All rights reserved.
-</footer>
-
-</body>
-</html>
- <p>Coming soon! Sankaran Platinum Plus is an upcoming development that offers state-of-the-art facilities designed for modern living.</p>
-</section>
-
-<footer>
- <p>&copy; 2025 Sankaran Group. All rights reserved.</p>
+<p>&copy; 2025 Sankaran Group. All rights reserved.</p>
 </footer>
 
 </body>
