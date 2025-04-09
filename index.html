@@ -4,22 +4,23 @@
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <title>Sankaran Group</title>
- <!-- Google Fonts Link -->
  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
  <style>
-   /* Reset some default styles */
+   /* General Reset */
    * {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
    }
 
+   /* Body */
    body {
      font-family: 'Lato', sans-serif;
      background-color: #f7f7f7;
      color: #333;
    }
 
+   /* Header */
    header {
      padding: 20px 40px;
      background-color: #222;
@@ -27,10 +28,6 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     position: fixed;
-     width: 100%;
-     top: 0;
-     z-index: 1000;
    }
 
    header h1 {
@@ -38,7 +35,7 @@
      font-size: 36px;
    }
 
-   header nav a {
+   nav a {
      color: white;
      text-decoration: none;
      margin: 0 15px;
@@ -47,8 +44,8 @@
 
    /* Hero Section */
    .hero {
-     height: 500px;
-     background-image: url('sankaran-group.PNG'); /* Replace with a real image */
+     height: 400px;
+     background-image: url('images/sankaran-logo.jpg'); /* Replace with a real image */
      background-size: cover;
      background-position: center;
      display: flex;
@@ -63,84 +60,40 @@
      font-family: 'Playfair Display', serif;
    }
 
-   .about {
-     padding: 60px 40px;
-     background-color: white;
+   /* Project Logos Section */
+   .project-logos {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     padding: 40px 0;
+     gap: 40px;
      text-align: center;
    }
 
-   .about h2 {
-     font-size: 36px;
-     font-family: 'Playfair Display', serif;
-     margin-bottom: 20px;
+   .project-logos a {
+     display: block;
+     text-align: center;
+     text-decoration: none;
    }
 
-   .about p {
-     font-size: 18px;
-     line-height: 1.6;
-     max-width: 800px;
-     margin: 0 auto 30px;
-   }
-
-   /* Gallery Section */
-   .gallery {
-     padding: 40px 20px;
-     background-color: #eee;
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     gap: 20px;
-   }
-
-   .gallery img {
-     width: 100%;
+   .project-logos img {
+     max-width: 200px;
      height: auto;
      border-radius: 10px;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease-in-out;
    }
 
-   /* Contact Section */
-   .contact {
-     padding: 60px 40px;
-     background-color: #222;
-     color: white;
-     text-align: center;
+   .project-logos img:hover {
+     transform: scale(1.1);
    }
 
-   .contact h3 {
-     font-size: 36px;
-     margin-bottom: 30px;
+   .project-logos p {
+     font-size: 18px;
+     margin-top: 10px;
+     font-family: 'Lato', sans-serif;
    }
 
-   .contact form {
-     max-width: 600px;
-     margin: 0 auto;
-     text-align: left;
-   }
-
-   .contact label {
-     display: block;
-     margin: 15px 0 5px;
-     font-weight: bold;
-   }
-
-   .contact input,
-   .contact textarea {
-     width: 100%;
-     padding: 10px;
-     margin-bottom: 15px;
-     border-radius: 5px;
-     border: 1px solid #ccc;
-   }
-
-   .contact button {
-     padding: 12px 20px;
-     background-color: #bfa268;
-     color: white;
-     border: none;
-     border-radius: 5px;
-     cursor: pointer;
-   }
-
+   /* Footer Section */
    footer {
      background-color: #222;
      color: white;
@@ -158,46 +111,42 @@
 <header>
  <h1>Sankaran Group</h1>
  <nav>
-   <a href="#about">About</a>
-   <a href="#gallery">Gallery</a>
-   <a href="#contact">Contact</a>
+   <a href="index.html">Home</a>
+   <a href="contact.html">Contact</a>
  </nav>
 </header>
 
 <!-- Hero Section -->
 <section class="hero">
  <h2>Building the Future of Conakry</h2>
+ <img src="sankaran-group-logo.PNG" alt="Sankaran Group Logo">
 </section>
 
-<!-- About Section -->
-<section class="about" id="about">
- <h2>Welcome to Sankaran Group</h2>
- <p>Sankaran Group is a leading construction and real estate company based in Conakry, Guinea. With years of experience, we specialize in residential, commercial, and mixed-use developments that reflect the highest standards of quality, sustainability, and design excellence. Our portfolio includes high-rise buildings, luxury apartments, and exclusive properties that are redefining the skyline of Conakry.</p>
+<!-- Project Logos Section -->
+<section class="project-logos">
+ <!-- Sankaran Plaza -->
+ <a href="sankaran-plaza.html">
+   <img src="sankaran-plaza-logo.PNG" alt="Sankaran Plaza Logo">
+   <p>Sankaran Plaza</p>
+ </a>
+
+ <!-- Sankaran Platinum -->
+ <a href="sankaran-platinum.html">
+   <img src="sankaran-platinum.PNG" alt="Sankaran Platinum Logo">
+   <p>Sankaran Platinum</p>
+ </a>
+
+ <!-- Sankaran Tower -->
+ <a href="sankaran-tower.html">
+   <img src="sankaran-tower.PNG" alt="Sankaran Tower Logo">
+   <p>Sankaran Tower</p>
+ </a>
 </section>
-
-<!-- Gallery Section -->
-<section class="gallery" id="gallery">
- <img src="sankaran-plaza.PNG" alt="Sankaran Plaza">
- <img src="sankaran-platinum.PNG" alt="Sankaran Platinum">
- <img src="sankaran-tower.PNG" alt="Sankaran Tower">
- <img src="platinum-plus-logo.PNG" alt="Sankaran Platinum Plus">
-</section>
-
-<!-- Contact Section -->
-<section class="contact" id="contact">
- <h3>Contact Us</h3>
- <form>
-   <label for="name">Name</label>
-   <input type="text" id="name" name="name" required />
-
-   <label for="email">Email</label>
-   <input type="email" id="email" name="email" required />
-
-   <label for="message">Message</label>
-   <textarea id="message" name="message" rows="5" required></textarea>
-
-   <button type="submit">Send Message</button>
- </form>
+ <!-- Sankaran Platinum Plus -->
+ <a href="sankaran-tower.html">
+   <img src="sankaran-platinum-plus-logo.PNG" alt="Sankaran Platinum Plus">
+   <p>Sankaran Platinum Plus</p>
+ </a>
 </section>
 
 <!-- Footer Section -->
