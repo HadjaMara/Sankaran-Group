@@ -3,78 +3,88 @@
 <head>
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>SM Sankaran - Construction Company</title>
+ <title>SM Sankaran</title>
  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
  <style>
-   body { margin: 0; font-family: 'Lato', sans-serif; background-color: #ffffff; color: #222; }
-   header { padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; background-color: #f9f9f9; }
-   header h1 { font-family: 'Playfair Display', serif; font-size: 28px; color: #333; }
-   .hero { position: relative; text-align: center; }
-   .hero img { width: 100%; height: auto; }
-   .section { padding: 60px 40px; text-align: center; }
-   .section h2 { font-family: 'Playfair Display', serif; font-size: 32px; margin-bottom: 10px; }
-   .section p { max-width: 700px; margin: 0 auto 30px; font-size: 16px; line-height: 1.6; }
-   .gallery { display: grid; grid-template-columns: 1fr; gap: 40px; max-width: 900px; margin: 0 auto; }
-   .gallery img { width: 100%; border-radius: 6px; }
-   .caption { font-family: 'Playfair Display', serif; font-size: 18px; margin-top: 10px; }
-   .contact-form { max-width: 600px; margin: 0 auto; text-align: left; }
-   .contact-form label { display: block; margin: 15px 0 5px; font-weight: bold; }
-   .contact-form input, .contact-form textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: 'Lato', sans-serif; }
-   .contact-form button { margin-top: 20px; background-color: #bfa268; color: white; padding: 12px 24px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
-   footer { background-color: #f1f1f1; text-align: center; padding: 20px; font-size: 14px; margin-top: 40px; }
+   /* Your CSS styling for this specific page */
+   body {
+     font-family: 'Lato', sans-serif;
+     background-color: #f7f7f7;
+     color: #333;
+   }
+
+   header {
+     padding: 20px 40px;
+     background-color: #222;
+     color: white;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   header h1 {
+     font-family: 'Playfair Display', serif;
+     font-size: 36px;
+   }
+
+   nav a {
+     color: white;
+     text-decoration: none;
+     margin: 0 15px;
+     font-size: 18px;
+   }
+
+   .project-details {
+     padding: 60px 40px;
+     text-align: center;
+   }
+
+   .project-details h2 {
+     font-size: 36px;
+     font-family: 'Playfair Display', serif;
+   }
+
+   .project-details img {
+     max-width: 80%;
+     height: auto;
+     border-radius: 10px;
+     margin-bottom: 20px;
+   }
+
+   footer {
+     background-color: #222;
+     color: white;
+     padding: 20px 0;
+     text-align: center;
+   }
+
+   footer p {
+     font-size: 16px;
+   }
  </style>
 </head>
 <body>
 
 <header>
- <h1>SM Sankaran</h1>
+ <h1>Sankaran Group</h1>
  <nav>
-   <a href="#">Home</a>
-   <a href="#">About</a>
-   <a href="#">Projects</a>
-   <a href="#">Contact</a>
+   <a href="index.html">Home</a>
+   <a href="sankaran-plaza.html">Sankaran Plaza</a>
+   <a href="sankaran-platinum.html">Sankaran Platinum</a>
+   <a href="sankaran-platinum-plus.html">Sankaran Platinum Plus</a>
+   <a href="sankaran-tower.html">Sankaran Tower</a>
  </nav>
 </header>
 
-<section class="hero">
- <!-- Include an image for the hero section -->
- <img src="images/sm-sankaran-construction.jpg" alt="SM Sankaran Construction">
-</section>
-
-<section class="section">
- <h2>We Build Your Dreams</h2>
- <p>SM Sankaran is a leading construction company specializing in residential, commercial, and industrial projects. We are committed to delivering high-quality buildings that exceed expectations. Our experience and attention to detail make us a trusted partner in every phase of the construction process.</p>
-</section>
-
-<section class="gallery">
- <img src="images/sm-sankaran-project1.jpg" alt="Residential Construction">
- <div class="caption">Residential Project</div>
-
- <img src="images/sm-sankaran-project2.jpg" alt="Commercial Building">
- <div class="caption">Commercial Building</div>
-
- <img src="images/sm-sankaran-project3.jpg" alt="Industrial Facility">
- <div class="caption">Industrial Facility</div>
-</section>
-
-<section class="contact-form" id="contact">
- <h3>Contact Us</h3>
- <form>
-   <label for="name">Name</label>
-   <input type="text" id="name" name="name" required />
-
-   <label for="email">Email</label>
-   <input type="email" id="email" name="email" required />
-
-   <label for="message">Message</label>
-   <textarea id="message" name="message" rows="5" required></textarea>
-
-   <button type="submit">Send Message</button>
- </form>
+<!-- Project Details Section for SM Sankaran -->
+<section class="project-details">
+ <h2>SM Sankaran</h2>
+ <img src="sm-sankaran-logo.PNG" alt="SM Sankaran">
+ <p>SM Sankaran is a leading construction company specializing in high-quality residential, commercial, and industrial projects. We build with precision and care, delivering excellence in every project.</p>
 </section>
 
 <footer>
- &copy; 2025 SM Sankaran Construction. All rights reserved.
+ <p>&copy; 2025 Sankaran Group. All rights reserved.</p>
 </footer>
 
 </body>
