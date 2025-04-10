@@ -204,7 +204,7 @@
     </div>
 
     <div class="project">
-      <img src="Platinum-plus-gym.JPG" alt="Sankaran Platinum">
+      <img src="sankaran-platinum-.PNG" alt="Sankaran Platinum">
       <h3>Sankaran Platinum</h3>
       <div class="lang-dropdown">
         <a href="sankaran-platinum.html">English</a>
@@ -213,7 +213,7 @@
     </div>
 
     <div class="project">
-      <img src="Platinum-plus-lobby.JPG" alt="Sankaran Platinum Plus">
+      <img src="Platinum-plus-.JPG" alt="Sankaran Platinum Plus">
       <h3>Sankaran Platinum Plus</h3>
       <div class="lang-dropdown">
         <a href="sankaran-platinum-plus-en.html">English</a>
@@ -222,7 +222,7 @@
     </div>
 
     <div class="project">
-      <img src="Platinum-plus-playroom.JPG" alt="Sankaran Tower">
+      <img src="sankaran-tower.PNG" alt="Sankaran Tower">
       <h3>Sankaran Tower</h3>
       <div class="lang-dropdown">
         <a href="sankaran-tower.html">English</a>
@@ -231,7 +231,7 @@
     </div>
 
     <div class="project">
-      <img src="Platinum-plus-pool.JPG" alt="SM Sankaran">
+      <img src="sm-sankaran-logo.PNG" alt="SM Sankaran">
       <h3>SM Sankaran</h3>
       <div class="lang-dropdown">
         <a href="sm-sankaran.html">English</a>
@@ -247,17 +247,39 @@
 </section>
 
 <!-- Map Section -->
-<section class="map-section">
-  <h2>Find Us in Conakry</h2>
-  <div class="map-container">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31728.41532640973!2d-13.701684968196065!3d9.537950417666601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfd1923ef76444b7%3A0x90274aaf27d06b1b!2sConakry%2C%20Guinea!5e0!3m2!1sen!2s!4v1712777711111!5m2!1sen!2s" 
-      width="100%" 
-      height="400" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
+<section class="section" id="map-section">
+  <h2>Find Our Properties in Conakry</h2>
+  <div id="map" style="height: 500px; border-radius: 10px;"></div>
+</section>
+
+<script>
+  function initMap() {
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: 9.55, lng: -13.68 },
+      zoom: 13,
+      styles: [
+        { featureType: "poi", stylers: [{ visibility: "off" }] },
+        { featureType: "transit", stylers: [{ visibility: "off" }] }
+      ]
+    });
+
+    const locations = [
+      { position: { lat: 9.53518, lng: -13.68863 }, title: "Sankaran Plaza" },
+      { position: { lat: 9.53502, lng: -13.68842 }, title: "Sankaran Tower" },
+      { position: { lat: 9.61204, lng: -13.63927 }, title: "Sankaran Platinum" },
+      { position: { lat: 9.53409, lng: -13.68949 }, title: "Residence Sankaran" }
+    ];
+
+    locations.forEach(loc => {
+      new google.maps.Marker({
+        position: loc.position,
+        map,
+        title: loc.title
+      });
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBRx2rvUOOcbQpjeaJLlS2QuuaBMuGCc&callback=initMap" async defer></script>
     </iframe>
   </div>
 </section>
