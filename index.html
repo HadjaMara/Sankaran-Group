@@ -247,11 +247,56 @@
 
 <!-- Map Section -->
 <section class="map-section">
-  <h2>Find Us in Conakry</h2>
-  <div class="map-container">
-    <iframe src="https://www.google.com/maps/d/embed?mid=1Sv2_FLCGpASUYMRqloOfr9VWQSeFoAU&ehbc=2E312F" width="640" height="480">
+  <h2>Find Our Properties in Conakry</h2>
+  <script>
+  function initMap() {
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: 9.55, lng: -13.68 },
+      zoom: 13,
+      styles: [
+        {
+          featureType: "poi",
+          stylers: [{ visibility: "off" }]
+        },
+        {
+          featureType: "transit",
+          stylers: [{ visibility: "off" }]
+        }
+      ]
+    });
+
+    const locations = [
+      {
+        position: { lat: 9.53518, lng: -13.68863 },
+        title: "Sankaran Plaza"
+      },
+      {
+        position: { lat: 9.53502, lng: -13.68842 },
+        title: "Sankaran Tower"
+      },
+      {
+        position: { lat: 9.61204, lng: -13.63927 },
+        title: "Sankaran Platinum"
+      },
+      {
+        position: { lat: 9.53409, lng: -13.68949 },
+        title: "Residence Sankaran"
+      }
+    ];
+
+    locations.forEach(loc => {
+      new google.maps.Marker({
+        position: loc.position,
+        map,
+        title: loc.title
+      });
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBRx2rvUOOcbQpjeaJLlS2QuuaBMuGCc&callback=initMap" async defer></script>
+  <div id="map"
       width="100%" 
-      height="400" 
+      height="500px" 
       style="border:0;" 
       allowfullscreen="" 
       loading="lazy" 
