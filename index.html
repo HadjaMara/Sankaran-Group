@@ -41,7 +41,7 @@
     .hero::before {
       content: "";
       background-image: url('sankaran-logo.png');
-      background-size: 700px;
+      background-size: 200px;
       background-repeat: no-repeat;
       background-position: center;
       opacity: 0.1;
@@ -220,25 +220,14 @@
   <h2>Find Our Properties in Conakry</h2>
   <div id="map"></div>
 </section>
-
-<footer>
-  <p>&copy; 2025 Sankaran Group. All rights reserved.</p>
-</footer>
-
 <script>
   function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: 9.55, lng: -13.68 },
       zoom: 13,
       styles: [
-        {
-          featureType: "poi",
-          stylers: [{ visibility: "off" }]
-        },
-        {
-          featureType: "transit",
-          stylers: [{ visibility: "off" }]
-        }
+        { featureType: "poi", stylers: [{ visibility: "off" }] },
+        { featureType: "transit", stylers: [{ visibility: "off" }] }
       ]
     });
 
@@ -259,6 +248,9 @@
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBRx2rvUOOcbQpjeaJLlS2QuuaBMuGCc&callback=initMap" async defer></script>
+<footer>
+  <p>&copy; 2025 Sankaran Group. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
