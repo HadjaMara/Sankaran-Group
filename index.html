@@ -126,29 +126,6 @@
     .project:hover .lang-dropdown {
       display: flex;
     }
-    .map-section {
-      text-align: center;
-      padding: 50px 20px;
-      background-color: #f3efe5;
-    }
-    .map-section h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    #map {
-      width: 100%;
-      height: 500px;
-      border-radius: 10px;
-    }
-    footer {
-      background-color: #222;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    footer p {
-      font-size: 16px;
-    }
   </style>
 </head>
 <body>
@@ -173,7 +150,7 @@
 <section class="projects-section">
   <h2>Explore Our Buildings</h2>
   <div class="project-grid">
-    <div class="project">
+    <div class="project">
       <img src="Platinum-plus.JPG" alt="Sankaran Plaza">
       <h3>Sankaran Plaza</h3>
       <div class="lang-dropdown">
@@ -190,7 +167,7 @@
       </div>
     </div>
     <div class="project">
-      <img src="platinum-plus-logo.PNG" alt="Sankaran Platinum Plus">
+      <img src="platinum-plus-.JPG" alt="Sankaran Platinum Plus">
       <h3>Sankaran Platinum Plus</h3>
       <div class="lang-dropdown">
         <a href="sankaran-platinum-plus-en.html">English</a>
@@ -220,6 +197,11 @@
   <h2>Find Our Properties in Conakry</h2>
   <div id="map"></div>
 </section>
+
+<footer>
+  <p>&copy; 2025 Sankaran Group. All rights reserved.</p>
+</footer>
+
 <script>
   function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
@@ -248,9 +230,6 @@
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBRx2rvUOOcbQpjeaJLlS2QuuaBMuGCc&callback=initMap" async defer></script>
-<footer>
-  <p>&copy; 2025 Sankaran Group. All rights reserved.</p>
-</footer>
 
 </body>
 </html>
