@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sankaran Group</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
-  <style>
+ <link rel="stylesheet"> <href="style.css">
+ <style>
+   /* General Reset */ 
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+    <style>
     body {
       font-family: 'Lato', sans-serif;
       margin: 0;
@@ -40,7 +48,7 @@
     }
     .hero::before {
       content: "";
-      background-image: url('sankaran-logo.png');
+      background-image: url('sankaran-group-logo.PNG');
       background-size: 200px;
       background-repeat: no-repeat;
       background-position: center;
@@ -150,61 +158,85 @@
 <section class="projects-section">
   <h2>Explore Our Buildings</h2>
   <div class="project-grid">
-        <div id="map" style="height: 500px; width: 100%;"></div>
+    <div class="project">
+      <img src="Platinum-plus.JPG" alt="Sankaran Plaza">
+      <h3>Sankaran Plaza</h3>
+      <div class="lang-dropdown">
+        <a href="sankaran-plaza.html">English</a>
+        <a href="sankaran-plaza-fr.html">Français</a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="sankaran-platinum.PNG" alt="Sankaran Platinum">
+      <h3>Sankaran Platinum</h3>
+      <div class="lang-dropdown">
+        <a href="sankaran-platinum.html">English</a>
+        <a href="sankaran-platinum-fr.html">Français</a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="platinum-plus-.JPG" alt="Sankaran Platinum Plus">
+      <h3>Sankaran Platinum Plus</h3>
+      <div class="lang-dropdown">
+        <a href="sankaran-platinum-plus-en.html">English</a>
+        <a href="sankaran-platinum-plus-fr.html">Français</a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="sankaran-tower.PNG" alt="Sankaran Tower">
+      <h3>Sankaran Tower</h3>
+      <div class="lang-dropdown">
+        <a href="sankaran-tower.html">English</a>
+        <a href="sankaran-tower-fr.html">Français</a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="sm-sankaran-logo.PNG" alt="SM Sankaran">
+      <h3>SM Sankaran</h3>
+      <div class="lang-dropdown">
+        <a href="sm-sankaran.html">English</a>
+        <a href="sm-sankaran-fr.html">Français</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="map-section">
+  <h2>Find Our Properties in Conakry</h2>
+  <div id="map"></div>
+</section>
 
 <script>
   function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: 9.565, lng: -13.65 },
+      center: { lat: 9.55, lng: -13.68 },
       zoom: 13,
+      styles: [
+        { featureType: "poi", stylers: [{ visibility: "off" }] },
+        { featureType: "transit", stylers: [{ visibility: "off" }] }
+      ]
     });
 
     const locations = [
-      {
-        name: "Sankaran Tower",
-        position: { lat: 9.559, lng: -13.645 },
-        icon: "https://cdn.jsdelivr.net/gh/sankarangroup/maps-assets/sankaran-tower.png"
-      },
-      {
-        name: "Sankaran Platinum",
-        position: { lat: 9.5745, lng: -13.6394 },
-        icon: "https://cdn.jsdelivr.net/gh/sankarangroup/maps-assets/sankaran-platinum.png"
-      },
-      {
-        name: "SM Sankaran",
-        position: { lat: 9.552, lng: -13.660 }, // Adjust if needed
-        icon: "https://cdn.jsdelivr.net/gh/sankarangroup/maps-assets/sm-sankaran.png"
-      }
+      { position: { lat: 9.53518, lng: -13.68863 }, title: "Sankaran Plaza" },
+      { position: { lat: 9.53502, lng: -13.68842 }, title: "Sankaran Tower" },
+      { position: { lat: 9.61204, lng: -13.63927 }, title: "Sankaran Platinum" },
+      { position: { lat: 9.53409, lng: -13.68949 }, title: "Residence Sankaran" }
     ];
 
     locations.forEach(loc => {
       new google.maps.Marker({
         position: loc.position,
-        map: map,
-        title: loc.name,
-        icon: {
-          url: loc.icon,
-          scaledSize: new google.maps.Size(40, 40)
-        },
-        label: {
-          text: loc.name,
-          fontSize: "14px",
-          fontWeight: "bold",
-          color: "#000",
-          className: "map-label"
-        }
+        map,
+        title: loc.title
       });
     });
   }
 </script>
-
-<script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBRx2rvUOOcbQpjeaJLlS2QuuaBMuGCc&callback=initMap">
-</script>
-</div>
-</section>
-<p>&copy; 2025 Sankaran Group. All rights reserved.</p>
-</footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBRx2rvUOOcbQpjeaJLlS2QuuaBMuGCc&callback=initMap" async defer></script>
 
 </body>
+        <footer>
+  <p>&copy; 2025 Sankaran Group. All rights reserved.</p>
+</footer>
 </html>
