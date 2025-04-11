@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -281,21 +280,21 @@
     ];
 
     locations.forEach(loc => {
-  const marker = new google.maps.Marker({
-    position: loc.position,
-    map: map,
-    label:{ 
-      text: loc.name,
-      fontSize:"14px",
-      fontWeight: "bold",
-       color: "#000"
-    },
-    icon: {
-      url: loc.icon,
-      scaledSize: new google.maps.Size(40, 40),
-      labelOrigin: new google.maps.Point(20, 50) 
-    }
-  });
+ const marker = new google.maps.Marker({
+  position: loc.position,
+  map: map,
+  label: {
+    text: loc.name,
+    fontSize: "14px",
+    fontWeight: "bold",
+    color: "#000"
+  },
+  icon: {
+    url: "https://maps.google.com/mapfiles/ms/icons/yellow-dot.png", // simple yellow pin
+    scaledSize: new google.maps.Size(40, 40),
+    labelOrigin: new google.maps.Point(20, 45)
+  }
+});
 
   const infoWindow = new google.maps.InfoWindow({
     content: `
