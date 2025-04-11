@@ -13,7 +13,6 @@
       background-color: #f3efe5;
       color: #333;
     }
-
     header {
       background-color: #222;
       color: white;
@@ -22,19 +21,16 @@
       align-items: center;
       padding: 20px 40px;
     }
-
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 36px;
     }
-
     nav a {
       color: tan;
       text-decoration: none;
       margin-left: 20px;
       font-size: 18px;
     }
-
     .hero {
       background-color: #e7dbc8;
       text-align: center;
@@ -42,10 +38,9 @@
       position: relative;
       overflow: hidden;
     }
-
     .hero::before {
       content: "";
-      background-image: url('sankaran-logo.png'); /* Replace with your actual logo filename */
+      background-image: url('sankaran-logo.png');
       background-size: 200px;
       background-repeat: no-repeat;
       background-position: center;
@@ -58,33 +53,27 @@
       transform: translate(-50%, -50%);
       z-index: 0;
     }
-
     .hero h2, .hero p {
       position: relative;
       z-index: 1;
     }
-
     .hero h2 {
       font-size: 48px;
       margin-bottom: 20px;
     }
-
     .hero p {
       font-size: 24px;
     }
-
     .about-section {
       background-color: #ffffff;
       padding: 60px 40px;
       text-align: center;
     }
-
     .about-section h2 {
       font-size: 32px;
       margin-bottom: 20px;
       color: #333;
     }
-
     .about-section p {
       max-width: 800px;
       margin: 0 auto;
@@ -92,25 +81,21 @@
       line-height: 1.7;
       color: #444;
     }
-
     .projects-section {
       text-align: center;
       padding: 50px 20px;
       background-color: #e7dbc8;
     }
-
     .projects-section h2 {
       font-size: 32px;
       margin-bottom: 30px;
     }
-
     .project-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 40px;
     }
-
     .project {
       width: 200px;
       text-align: center;
@@ -121,16 +106,13 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       transition: transform 0.3s;
     }
-
     .project:hover {
       transform: translateY(-5px);
     }
-
     .project img {
       width: 100%;
       border-radius: 8px 8px 0 0;
     }
-
     .project h3 {
       font-size: 20px;
       margin: 10px 0;
@@ -139,7 +121,6 @@
       border-radius: 5px;
       cursor: pointer;
     }
-
     .lang-dropdown {
       display: none;
       flex-direction: column;
@@ -153,42 +134,35 @@
       z-index: 10;
       width: max-content;
     }
-
     .lang-dropdown a {
       color: white;
       text-decoration: none;
       padding: 5px 10px;
       white-space: nowrap;
     }
-
     .project:hover .lang-dropdown {
       display: flex;
     }
-
     .map-section {
       text-align: center;
       padding: 50px 20px;
       background-color: #f3efe5;
     }
-
     .map-section h2 {
       font-size: 28px;
       margin-bottom: 20px;
     }
-
     #map {
       height: 500px;
       width: 100%;
       border-radius: 10px;
     }
-
     footer {
       background-color: #222;
       color: white;
       padding: 20px;
       text-align: center;
     }
-
     footer p {
       font-size: 16px;
     }
@@ -231,7 +205,6 @@
         <a href="sankaran-plaza-fr.html">Français</a>
       </div>
     </div>
-
     <div class="project">
       <img src="sankaran-platinum.PNG" alt="Sankaran Platinum">
       <h3>Sankaran Platinum</h3>
@@ -240,7 +213,6 @@
         <a href="sankaran-platinum-fr.html">Français</a>
       </div>
     </div>
-
     <div class="project">
       <img src="platinum-plus-logo.PNG" alt="Sankaran Platinum Plus">
       <h3>Sankaran Platinum Plus</h3>
@@ -249,7 +221,6 @@
         <a href="plus-fr.html">Français</a>
       </div>
     </div>
-
     <div class="project">
       <img src="sankaran-tower.PNG" alt="Sankaran Tower">
       <h3>Sankaran Tower</h3>
@@ -258,7 +229,6 @@
         <a href="sankaran-tower-fr.html">Français</a>
       </div>
     </div>
-
     <div class="project">
       <img src="sm-sankaran-logo.PNG" alt="SM Sankaran">
       <h3>SM Sankaran</h3>
@@ -279,7 +249,6 @@
   <p>&copy; 2025 Sankaran Group. All rights reserved.</p>
 </footer>
 
-<!-- Google Maps Script -->
 <script>
   function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
