@@ -271,38 +271,57 @@
 <!-- Map Section -->
 <section class="section" id="map-section">
   <h2>Find Our Properties in Conakry</h2>
-  <div id="map" style="height: 500px; border-radius: 10px;"></div>
-</section>
+ <div id="map" style="height: 500px; width: 100%;"></div>
 
 <script>
   function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: 9.55, lng: -13.68 },
+      center: { lat: 9.565, lng: -13.65 },
       zoom: 13,
-      styles: [
-        { featureType: "poi", stylers: [{ visibility: "off" }] },
-        { featureType: "transit", stylers: [{ visibility: "off" }] }
-      ]
     });
 
     const locations = [
-      { position: { lat: 9.53518, lng: -13.68863 }, title: "Sankaran Plaza" },
-      { position: { lat: 9.53502, lng: -13.68842 }, title: "Sankaran Tower" },
-      { position: { lat: 9.61204, lng: -13.63927 }, title: "Sankaran Platinum" },
-      { position: { lat: 9.53409, lng: -13.68949 }, title: "Residence Sankaran" }
+      {
+        name: "Sankaran Tower",
+        position: { lat: 9.559, lng: -13.645 },
+        icon: "https://cdn.jsdelivr.net/gh/sankarangroup/maps-assets/sankaran-tower.png"
+      },
+      {
+        name: "Sankaran Platinum",
+        position: { lat: 9.5745, lng: -13.6394 },
+        icon: "https://cdn.jsdelivr.net/gh/sankarangroup/maps-assets/sankaran-platinum.png"
+      },
+      {
+        name: "SM Sankaran",
+        position: { lat: 9.552, lng: -13.660 }, // Adjust if needed
+        icon: "https://cdn.jsdelivr.net/gh/sankarangroup/maps-assets/sm-sankaran.png"
+      }
     ];
 
     locations.forEach(loc => {
       new google.maps.Marker({
         position: loc.position,
-        map,
-        title: loc.title
+        map: map,
+        title: loc.name,
+        icon: {
+          url: loc.icon,
+          scaledSize: new google.maps.Size(40, 40)
+        },
+        label: {
+          text: loc.name,
+          fontSize: "14px",
+          fontWeight: "bold",
+          color: "#000",
+          className: "map-label"
+        }
       });
     });
   }
 </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBRx2rvUOOcbQpjeaJLlS2QuuaBMuGCc&callback=initMap" async defer></script>
 
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBRx2rvUOOcbQpjeaJLlS2QuuaBMuGCc&callback=initMap">
+</script>
   </div>
 </section>
 <p>&copy; 2025 Sankaran Group. All rights reserved.</p>
