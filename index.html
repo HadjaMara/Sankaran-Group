@@ -280,23 +280,30 @@
       }
     ];
 
-    locations.forEach(loc => {
-      new google.maps.Marker({
-        position: loc.position,
-        map: map,
-        title: loc.name,
-        icon: {
-          url: loc.icon,
-          scaledSize: new google.maps.Size(40, 40)
-        },
-        label: {
-          text: loc.name,
-          fontSize: "14px",
-          fontWeight: "bold",
-          color: "#000"
-        }
-      });
-    });
+    llocations.forEach(loc => {
+  const marker = new google.maps.Marker({
+    position: loc.position,
+    map: map,
+    title: loc.name,
+    icon: {
+      url: loc.icon,
+      scaledSize: new google.maps.Size(40, 40)
+    }
+  });
+
+  const infoWindow = new google.maps.InfoWindow({
+    content: `
+      <div style="display: flex; align-items: center;">
+        <img src="${loc.icon}" style="width: 30px; height: 30px; margin-right: 10px;">
+        <strong>${loc.name}</strong>
+      </div>
+    `
+  });
+
+  marker.addListener("click", () => {
+    infoWindow.open(map, marker);
+  });
+});
   }
 </script>
 
