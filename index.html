@@ -166,7 +166,7 @@
     footer p {
       font-size: 16px;
     }
-    /* MAIN HEADER STYLES */
+/* Keep header layout the same */
 .main-nav ul {
   list-style: none;
   margin: 0;
@@ -191,40 +191,36 @@
   background-color: #222;
 }
 
-/* DROPDOWN STYLING */
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 48px;
   left: 0;
   background-color: #111;
-  min-width: 140px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  min-width: 160px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 0;
   z-index: 1000;
-  flex-direction: column;
 }
-
 .dropdown-content li {
-  display: block;
   width: 100%;
 }
-
 .dropdown-content li a {
   padding: 10px 16px;
+  display: block;
   color: white;
   text-decoration: none;
-  display: block;
+  white-space: nowrap;
 }
 
 .dropdown-content li a:hover {
   background-color: #333;
 }
 
-/* SHOW ON HOVER */
 .dropdown:hover .dropdown-content {
-  display: flex;
+  display: block;
 }
-
   </style>
 </head>
 <body>
