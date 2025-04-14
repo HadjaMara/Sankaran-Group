@@ -1,81 +1,180 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Sankaran Tower</title>
- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
- <style>
-   body { margin: 0; font-family: 'Lato', sans-serif; background-color: #ffffff; color: #222; }
-   header { padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; background-color: #f9f9f9; }
-   header h1 { font-family: 'Playfair Display', serif; font-size: 28px; color: #333; }
-   .hero { position: relative; text-align: center; }
-   .hero img { width: 100%; height: auto; }
-   .section { padding: 60px 40px; text-align: center; }
-   .section h2 { font-family: 'Playfair Display', serif; font-size: 32px; margin-bottom: 10px; }
-   .section p { max-width: 700px; margin: 0 auto 30px; font-size: 16px; line-height: 1.6; }
-   .gallery { display: grid; grid-template-columns: 1fr; gap: 40px; max-width: 900px; margin: 0 auto; }
-   .gallery img { width: 100%; border-radius: 6px; }
-   .caption { font-family: 'Playfair Display', serif; font-size: 18px; margin-top: 10px; }
-   .contact-form { max-width: 600px; margin: 0 auto; text-align: left; }
-   .contact-form label { display: block; margin: 15px 0 5px; font-weight: bold; }
-   .contact-form input, .contact-form textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: 'Lato', sans-serif; }
-   .contact-form button { margin-top: 20px; background-color: #bfa268; color: white; padding: 12px 24px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
-   footer { background-color: #f1f1f1; text-align: center; padding: 20px; font-size: 14px; margin-top: 40px; }
- </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sankaran Platinum Plus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3efe5;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-right: 20px;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+
+    .hero {
+      background-color: #e7dbc8;
+      color: black;
+      text-align: center;
+      padding: 70px 40px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    .description {
+      padding: 60px 40px;
+      background-color: white;
+      text-align: center;
+    }
+
+    .description h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .description p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .center img {
+      max-width: 90%;
+      border-radius: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 0;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      max-width: 20%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      background-color: #bfa268;
+      padding: 40px;
+      text-align: center;
+      color: black;
+    }
+
+    .cta h3 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .cta a {
+      text-decoration: none;
+      background-color: #222;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
 
 <header>
- <h1>Sankaran Tower</h1>
- <nav>
-   <a href="#">Home</a>
-   <a href="#">Buildings</a>
-   <a href="#">Contact</a>
- </nav>
+  <h1>Sankaran Group</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="sankaran-plaza.html">Sankaran Plaza</a>
+    <a href="sankaran-platinum.html">Sankaran Platinum</a>
+    <a href="sankaran-platinum-plus.html">Sankaran Platinum Plus</a>
+    <a href="sankaran-tower.html">Sankaran Tower</a>
+    <a href="sm-sankaran.html">SM Sankaran</a>
+  </nav>
 </header>
 
-<div class="coming-soon">COMING SOON</div>
-
 <section class="hero">
- <!-- Include an image for the hero section -->
- <img src="images/tower-exterior.jpg" alt="Sankaran Tower Exterior">
+  <h2>Sankaran Platinum Plus</h2>
+  <p>Exclusive living with premium amenities</p>
 </section>
 
-<section class="section">
- <h2>Stay in Style, Only at Sankaran Tower</h2>
- <p>Sankaran Tower is a modern 9-floor building designed exclusively for Airbnb rentals. Offering stylish, fully furnished apartments and premium amenities, this development will deliver a new standard of short-term luxury stays in the heart of Conakry.</p>
+<section class="description">
+  <h2>Project Overview</h2>
+  <p><strong>Coming Soon!</strong></p>
+  <p>
+  "Sankaran Tower is a modern four-story commercial building located in Conakry, Guinea, 
+   developed by the Sankaran Group. Designed to meet the needs of contemporary businesses, 
+   it offers premium office spaces equipped with essential amenities. 
+   The building’s strategic location provides easy access to key areas of the city, 
+   making it an ideal choice for companies seeking a professional and convenient workspace."
+  </p>
+  <div class="center">
+    <img src="sankaran-tower.PNG" alt="Sankaran Platinum Plus Building">
+  </div>
 </section>
 
-<section class="gallery">
- <!-- Add images to showcase the interior or facilities -->
- <img src="images/tower-lobby.jpg" alt="Sankaran Tower Lobby">
- <div class="caption">Stylish Lobby</div>
- <img src="images/tower-bedroom.jpg" alt="Sankaran Tower Bedroom">
- <div class="caption">Luxury Bedroom</div>
- <img src="images/tower-lounge.jpg" alt="Sankaran Tower Lounge">
- <div class="caption">Exclusive Lounge</div>
-</section>
 
-<section class="contact-form" id="contact">
- <h3>Contact Us</h3>
- <form>
-   <label for="name">Name</label>
-   <input type="text" id="name" name="name" required>
-
-   <label for="email">Email</label>
-   <input type="email" id="email" name="email" required>
-
-   <label for="message">Message</label>
-   <textarea id="message" name="message" rows="5" required></textarea>
-
-   <button type="submit">Send Message</button>
- </form>
+<section class="cta">
+  <h3>Ready to Experience Sankaran Tower?</h3>
+  <a href="contact.html">Contact Us for More Information</a>
 </section>
 
 <footer>
- &copy; 2025 Sankaran Group. All rights reserved.
+  <p>&copy; 2025 Sankaran Group. All rights reserved.</p>
 </footer>
 
 </body>
