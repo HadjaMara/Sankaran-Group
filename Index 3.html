@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sankaran Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3efe5;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+    }
+    nav a {
+      color: tan;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+    .hero {
+      background-color: #e7dbc8;
+      text-align: center;
+      padding: 100px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      background-image: url('sankaran-logo.png');
+      background-size: 200px;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      height: 300px;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+    .hero h2, .hero p {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 24px;
+    }
+    .about-section {
+      background-color: #ffffff;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .about-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .about-section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #444;
+    }
+    .projects-section {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #e7dbc8;
+    }
+    .projects-section h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .project {
+      width: 200px;
+      text-align: center;
+      position: relative;
+      background-color: #f9f9f9;
+      padding-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+    .project h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      background-color: #bfa268;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .lang-dropdown {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: #222;
+      padding: 10px;
+      border-radius: 5px;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      width: max-content;
+    }
+    .lang-dropdown a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      white-space: nowrap;
+    }
+    .project:hover .lang-dropdown {
+      display: flex;
+    }
+    .map-section {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #f3efe5;
+    }
+    .map-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    #map {
+      height: 500px;
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    footer p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sankaran Group</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="sankaran-plaza.html">Sankaran Plaza</a>
+    <a href="sankaran-platinum.html">Sankaran Platinum</a>
+    <a href="sankaran-platinum-plus.html">Sankaran Platinum Plus</a>
+    <a href="sankaran-tower.html">Sankaran Tower</a>
+    <a href="sm-sankaran.html">SM Sankaran</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Welcome to Sankaran Group</h2>
+  <p>Excellence in real estate and construction across Conakry</p>
+</section>
+
+<section class="about-section">
+  <h2>About Sankaran Group</h2>
+  <p>
+    Sankaran Group is a leading construction and real estate company based in Conakry, Guinea. With years of experience, we specialize in residential, commercial, and mixed-use developments that reflect the highest standards of quality, sustainability, and design excellence. Our portfolio includes high-rise buildings, luxury apartments, and exclusive properties that are redefining the skyline of Conakry.
+  </p>
+</section>
+
+<section class="projects-section">
+  <h2>Explore Our Buildings</h2>
+  <div class="project-grid">
+    <div class="project">
+      <img src="platinum.PNG" alt="Sankaran Plaza">
+      <h3>Sankaran Plaza</h3>
+      <div class="lang-dropdown">
+        <a href="sankaran-plaza.html">English</a>
+        <a href="sankaran-plaza-fr.html">Français</a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="sankaran-platinum.PNG" alt="Sankaran Platinum">
+      <h3>Sankaran Platinum</h3>
+      <div class="lang-dropdown">
+        <a href="sankaran-platinum.html">English</a>
+        <a href="sankaran-platinum-fr.html">Français</a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="platinum-plus-logo.PNG" alt="Sankaran Platinum Plus">
+      <h3>Sankaran Platinum Plus</h3>
+      <div class="lang-dropdown">
+        <a href="plus-en.html">English</a>
+        <a href="plus-fr.html">Français</a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="sankaran-tower.PNG" alt="Sankaran Tower">
+      <h3>Sankaran Tower</h3>
+      <div class="lang-dropdown">
+        <a href="sankaran-tower.html">English</a>
+        <a href="sankaran-tower-fr.html">Français</a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="sm-sankaran-logo.PNG" alt="SM Sankaran">
+      <h3>SM Sankaran</h3>
+      <div class="lang-dropdown">
+        <a href="sm-sankaran.html">English</a>
+        <a href="sm-sankaran-fr.html">Français</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="map-section">
+  <h2>Find Our Properties in Conakry</h2>
+  <div id="map"></div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Sankaran Group. All rights reserved.</p>
+</footer>
+
+<script>
+  function initMap() {
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: 9.565, lng: -13.65 },
+      zoom: 13,
+    });
+
+    const locations = [
+      {
+        name: "Sankaran Tower",
+        position: { lat: 9.559, lng: -13.645 },
+        icon: "https://cdn.jsdelivr.net/gh/sankarangroup/maps-assets/sankaran-tower.png"
+      },
+      {
+        name: "Sankaran Platinum",
+        position: { lat: 9.5745, lng: -13.6394 },
+        icon: "https://cdn.jsdelivr.net/gh/sankarangroup/maps-assets/sankaran-platinum.png"
+      },
+      {
+        name: "SM Sankaran",
+        position: { lat: 9.552, lng: -13.660 },
+        icon: "https://cdn.jsdelivr.net/gh/sankarangroup/maps-assets/sm-sankaran.png"
+      }
+    ];
+
+    locations.forEach(loc => {
+      new google.maps.Marker({
+        position: loc.position,
+        map: map,
+        title: loc.name,
+        icon: {
+          url: loc.icon,
+          scaledSize: new google.maps.Size(40, 40)
+        },
+        label: {
+          text: loc.name,
+          fontSize: "14px",
+          fontWeight: "bold",
+          color: "#000"
+        }
+      });
+    });
+  }
+</script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+
+</body>
+</html>
