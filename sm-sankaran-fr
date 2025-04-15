@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SM Sankaran - Entreprise de Construction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .main-nav {
+      background-color: #111;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .main-nav ul li {
+      position: relative;
+    }
+
+    .main-nav ul li a {
+      display: block;
+      padding: 14px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .main-nav ul li a:hover {
+      background-color: #222;
+    }
+
+    .language-toggle {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      z-index: 1000;
+      font-weight: bold;
+    }
+
+    .language-toggle .lang-option {
+      color: #fff;
+      text-decoration: none;
+      background-color: #111;
+      padding: 6px 12px;
+      border-radius: 4px;
+      margin: 0 4px;
+    }
+
+    .language-toggle .lang-option:hover {
+      background-color: #333;
+    }
+
+    header {
+      background-color: #eee;
+      padding: 80px 20px 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Language Toggle -->
+  <div class="language-toggle">
+    <a href="sm-sankaran-en.html" class="lang-option">EN</a>
+    <span>|</span>
+    <a href="sm-sankaran-fr.html" class="lang-option">FR</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="/index.html">Accueil</a></li>
+      <li><a href="sankaran-plaza-fr.html">Sankaran Plaza</a></li>
+      <li><a href="sankaran-platinum-fr.html">Sankaran Platinum</a></li>
+      <li><a href="plus-fr.html">Platinum Plus</a></li>
+      <li><a href="sankaran-tower-fr.html">Sankaran Tower</a></li>
+      <li><a href="sm-sankaran-fr.html">SM Sankaran</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>SM Sankaran</h1>
+    <p>Votre partenaire de confiance pour la construction à Conakry</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h2>À propos de SM Sankaran</h2>
+    <p>
+      SM Sankaran est la branche de construction du groupe Sankaran. Basée à Conakry, en Guinée, elle est spécialisée dans la réalisation de projets résidentiels, commerciaux et de grande envergure.
+    </p>
+    <p>
+      Grâce à une équipe d'ingénieurs, d'architectes et de gestionnaires de projets hautement qualifiés, nous assurons une exécution rapide et de qualité selon les normes internationales.
+    </p>
+    <p>
+      Nous intervenons à toutes les étapes : conception, construction, supervision de chantier, et livraison clé en main.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Groupe Sankaran. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
